@@ -1,0 +1,69 @@
+server:
+  port: 8085
+
+spring:
+  boot:
+    admin:
+      client:
+        url: http://localhost:8083/
+        
+        
+        
+        
+  datasource:
+     username: root
+     password: mahadev7041
+     url: jdbc:mysql://localhost:3306/his_dev_db
+     driver-class-name: com.mysql.cj.jdbc.Driver
+    
+  jpa:
+     hibernate:
+       ddl-auto: update
+     show-sql: true 
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+        
+        
+       
+  mail:
+    default-encoding: UTF-8
+    host: smtp.gmail.com
+    username: mahadevgade7@gmail.com
+    password: ksdl xoxg efxn ofqj
+    port: 587
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+    protocol: smtp
+    test-connection: false
+       
+        
+
+app:
+  messages:
+    accCreated: User Account Created...
+    accfailed: Account Creation failed...
+    stschnged: update Account Status...
+    stschngedfailed: upadte failed...
+    invalidCred: invalid User Credentials...
+    dashboard: Welcome to Dashboard...
+    resetpwd: Reset password page...
+    pwdsub: Password-HIS
+    sub: Recover password-HIS
+    accunlock: Account Unlock...
+    savedPlan: Plan Created Succsesfully...
+    notsaved: Plan Creation failed...
+    updated: Plan updated...
+    notUpdated: Plan updated failed...
+    deleted: Plan deleted...
+    notdeleted: Plan Not deleted...
+    statusUpdated: Plan status updated...
+    notstatusUpdated: Plan status updated failed...
+    
