@@ -1,0 +1,36 @@
+
+server:
+  port: 8086
+
+spring:
+  boot:
+    admin:
+      client:
+        url: http://localhost:8083/
+        
+        
+        
+        
+  datasource:
+     username: root
+     password: mahadev7041
+     url: jdbc:mysql://localhost:3306/his_dev_db
+     driver-class-name: com.mysql.cj.jdbc.Driver
+    
+  jpa:
+     hibernate:
+       ddl-auto: update
+     show-sql: true 
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+        
+        
+app:
+  messages:
+  ssawebapiUrl: http://localhost:8082/ssa/{ssn}
+  appcreated: Application created with CaseNo...
+  invalidssn: Invalid SSN... 
