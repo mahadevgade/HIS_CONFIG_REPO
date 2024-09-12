@@ -29,20 +29,17 @@ management:
         
         
        
-  mail:
-    default-encoding: UTF-8
+   mail:
     host: smtp.gmail.com
+    port: 587
     username: mahadevgade7@gmail.com
     password: ksdl xoxg efxn ofqj
-    port: 587
     properties:
       mail:
-        smtp:
-          auth: true
-          starttls:
-            enable: true
-    protocol: smtp
-    test-connection: false
+       smtp:
+         auth: true
+         starttls:
+          enable: true 
        
         
 
