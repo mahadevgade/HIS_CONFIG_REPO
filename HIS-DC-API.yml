@@ -1,0 +1,44 @@
+
+
+
+
+
+server:
+  port: 8087
+
+spring:
+  boot:
+    admin:
+      client:
+        url: http://localhost:8083/
+        
+        
+        
+        
+  datasource:
+     username: root
+     password: mahadev7041
+     url: jdbc:mysql://localhost:3306/his_dev_db
+     driver-class-name: com.mysql.cj.jdbc.Driver
+    
+  jpa:
+     hibernate:
+       ddl-auto: update
+     show-sql: true 
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+        
+        
+app:
+  messages:
+   incomesaved: Income Data saved...
+   incomenotsaved: failed to save data...
+   edusaved: Education Data saved...
+   edunotsaved: failed to save data...
+   kidsaved: Kids Data saved...
+   kidnotsaved: failed to save data...
+ 
