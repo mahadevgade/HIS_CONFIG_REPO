@@ -1,13 +1,7 @@
 
-
 server:
   port: 8089
-  
-  
 
-
-
-spring:
   boot:
     admin:
       client:
@@ -44,12 +38,10 @@ management:
       exposure:
         include: "*"
         
-
-          
-          
           
  #AWS S3 Details Bucket Configuration                           
 accessKey:  AKIAQLVQQ42MONEU5GPQ
 secret: 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
 bucketName: hisbucket002
 region: ap-south-1
+    
